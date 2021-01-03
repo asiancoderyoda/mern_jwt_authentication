@@ -1,0 +1,26 @@
+{
+  "name": "mern-auth-app-todo",
+  "version": "1.0.0",
+  "description": "authentication using jwt",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Avigyan Bhakta",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.7",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}
